@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     saveButton.addEventListener('click', () => {
-      saveCategory(categoryDiv);
+      saveCategory(categoryDiv, saveButton); // Pass the button to saveCategory
     });
 
     deleteButton.addEventListener('click', () => {
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     previewElement.style.backgroundColor = colorCode;
   }
 
-  function saveCategory(categoryDiv) {
+  function saveCategory(categoryDiv, saveButton) {
     const nameInput = categoryDiv.querySelector('.category-name');
     const colorInput = categoryDiv.querySelector('.category-color');
     const urlsTextarea = categoryDiv.querySelector('.website-urls');
@@ -60,6 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
       color: colorInput.value,
       urls: urlsTextarea.value.trim()
     };
+
+    // Disable the button and change text to indicate saving
+    saveButton.disabled = true;
+    saveButton.textContent = 'Saving...';
 
     chrome.storage.sync.get('categories', (data) => {
       let categories = data.categories || [];
@@ -71,7 +75,16 @@ document.addEventListener('DOMContentLoaded', () => {
         categories.push(categoryData);
       }
 
-      chrome.storage.sync.set({ 'categories': categories });
+      chrome.storage.sync.set({ 'categories': categories }, () => {
+        // Re-enable the button and change text back to "Save" after saving
+        saveButton.disabled = false;
+        saveButton.textContent = 'Save';
+        // Optionally, provide a visual confirmation (e.g., briefly change background)
+        saveButton.classList.add('saved');
+        setTimeout(() => {
+          saveButton.classList.remove('saved');
+        }, 1500); // Remove the class after 1.5 seconds
+      });
     });
   }
 
