@@ -4,8 +4,7 @@
     "version": "1.0",
     "description": "Highlights Google search results based on categorized websites.",
     "permissions": [
-      "storage",
-      "activeTab"
+      "storage"
     ],
     "host_permissions": [
       "*://*/*"

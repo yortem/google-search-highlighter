@@ -1,6 +1,6 @@
 # Google Search Highlighter (Chrome Extension)
 
-This Chrome extension enhances your Google search experience by allowing you to categorize search results directly on the page. The goal is to help users organize information, quickly identify relevant links from specific categories, and streamline the research or browsing process.
+This Chrome extension enhances your Google search experience by allowing you to categorize search results directly on the page. The goal is to help users organize information, quickly identify relevant links from specific categories, and streamline the browsing process.
 
 This extension is intended for anyone who frequently uses Google Search for a more efficient way to navigate information.
 
