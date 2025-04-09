@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Highlighter Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>Google Search Highlighter</h1>
+  <div id="categories-container">
+  </div>
+  <button id="add-category-btn">Add Category</button>
+
+  <template id="category-template">
+    <div class="category">
+      <div class="input-row">
+        <label for="category-name">Name:</label>
+        <input type="text" class="category-name" id="category-name" placeholder="Category Name">
+
+        <label for="category-color">Color:</label>
+        <div class="color-input-container">
+          <input type="color" class="category-color" id="category-color">
+          <div class="color-preview"></div>
+        </div>
+      </div>
+
+      <label for="website-urls">Websites:</label>
+      <textarea class="website-urls" id="website-urls" placeholder="example.com\nsubdomain.example.org"></textarea>
+
+      <div class="button-group">
+        <button class="save-category-btn">Save</button>
+        <button class="delete-category-btn">Delete</button>
+      </div>
+    </div>
+  </template>
+
+  <script src="popup.js"></script>
+</body>
+</html>

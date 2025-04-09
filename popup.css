@@ -1,0 +1,132 @@
+body {
+  width: 320px; /* Slightly smaller overall width */
+  padding: 10px; /* Reduced padding */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 15px; /* Reduced margin */
+  text-align: center;
+  font-size: 1.5em; /* Slightly smaller heading */
+}
+
+#add-category-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px; /* Smaller button padding */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; /* Smaller font size */
+  margin-bottom: 15px; /* Reduced margin */
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#add-category-btn:hover {
+  background-color: #2980b9;
+}
+
+.category {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px; /* Reduced padding */
+  margin-bottom: 10px; /* Reduced margin */
+  border-radius: 6px; /* Slightly smaller border radius */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); /* Subtler shadow */
+}
+
+.input-row {
+  display: flex;
+  gap: 10px; /* Space between name and color */
+  margin-bottom: 8px; /* Reduced margin */
+  align-items: center; /* Align labels and inputs vertically */
+}
+
+label {
+  display: block;
+  margin-bottom: 3px; /* Reduced margin */
+  font-weight: bold;
+  color: #555;
+  width: auto; /* Adjust label width */
+}
+
+.category-name {
+  width: calc(50% - 15px); /* 50% width with some spacing */
+  padding: 8px; /* Reduced padding */
+  margin-bottom: 0; /* Remove bottom margin as it's in the row */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 12px; /* Smaller font size */
+}
+
+.color-input-container {
+  display: flex;
+  align-items: center;
+  width: calc(50% - 15px); /* 50% width with some spacing */
+}
+
+.category-color {
+  width: calc(100% - 35px); /* Adjust for preview width and spacing */
+  padding: 8px; /* Reduced padding */
+  margin-bottom: 0; /* Remove bottom margin */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 12px; /* Smaller font size */
+}
+
+.color-preview {
+  width: 20px; /* Smaller preview */
+  height: 20px; /* Smaller preview */
+  border: 1px solid #bbb;
+  border-radius: 3px; /* Smaller border radius */
+  margin-left: 5px;
+}
+
+.website-urls {
+  width: calc(100% - 12px);
+  padding: 8px; /* Reduced padding */
+  margin-bottom: 8px; /* Reduced margin */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 12px; /* Smaller font size */
+  min-height: 60px; /* Slightly larger initial height */
+  flex-grow: 1; /* Allow it to grow vertically */
+}
+
+.button-group {
+  display: flex;
+  gap: 5px; /* Reduced gap */
+  margin-top: 10px; /* Reduced margin */
+}
+
+.save-category-btn,
+.delete-category-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 6px 10px; /* Smaller button padding */
+  border-radius: 4px; /* Smaller border radius */
+  cursor: pointer;
+  font-size: 12px; /* Smaller font size */
+  transition: background-color 0.3s ease;
+}
+
+.delete-category-btn {
+  background-color: #e74c3c;
+}
+
+.save-category-btn:hover {
+  background-color: #219653;
+}
+
+.delete-category-btn:hover {
+  background-color: #c0392b;
+}
