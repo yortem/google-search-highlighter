@@ -72,21 +72,15 @@ label {
 }
 
 .category-color {
-  width: calc(100% - 35px); /* Adjust for preview width and spacing */
-  padding: 8px; /* Reduced padding */
-  margin-bottom: 0; /* Remove bottom margin */
-  border: 1px solid #ccc;
+  width: calc(100% - 10px);
+  height: 40px;
+  padding: 8px;
+  margin-bottom: 0;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: 12px; /* Smaller font size */
-}
-
-.color-preview {
-  width: 20px; /* Smaller preview */
-  height: 20px; /* Smaller preview */
-  border: 1px solid #bbb;
-  border-radius: 3px; /* Smaller border radius */
-  margin-left: 5px;
+  font-size: 12px;
+  padding: 0px;
+  border: 0px;
 }
 
 .website-urls {

@@ -21,19 +21,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoryDiv = newCategory.querySelector('.category');
     const nameInput = newCategory.querySelector('.category-name');
     const colorInput = newCategory.querySelector('.category-color');
-    const colorPreview = newCategory.querySelector('.color-preview');
     const urlsTextarea = newCategory.querySelector('.website-urls');
     const saveButton = newCategory.querySelector('.save-category-btn');
     const deleteButton = newCategory.querySelector('.delete-category-btn');
 
     nameInput.value = categoryData.name;
     colorInput.value = categoryData.color;
-    updateColorPreview(categoryData.color, colorPreview);
     urlsTextarea.value = categoryData.urls;
-
-    colorInput.addEventListener('input', () => {
-      updateColorPreview(colorInput.value, colorPreview);
-    });
 
     saveButton.addEventListener('click', () => {
       saveCategory(categoryDiv, saveButton); // Pass the button to saveCategory
@@ -44,10 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     categoriesContainer.appendChild(categoryDiv);
-  }
-
-  function updateColorPreview(colorCode, previewElement) {
-    previewElement.style.backgroundColor = colorCode;
   }
 
   function saveCategory(categoryDiv, saveButton) {
