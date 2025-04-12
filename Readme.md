@@ -16,6 +16,12 @@ This extension is intended for anyone who frequently uses Google Search for a mo
 
 ## Installation
 
+### Install Directly from the Chrome Web Store
+
+Click on the link below and add to your chrome
+
+[![Chrome Web Store](chrome-web-store-badge.png)](https://chromewebstore.google.com/detail/google-search-highlighter/elhofacbaieekmifabnmfncflfjklikb)
+
 ### From Source (for Developers)
 
 If you want to run the extension from the source code (for development or testing):
